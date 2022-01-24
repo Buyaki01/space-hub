@@ -1,0 +1,38 @@
+body {
+  background-color: whitesmoke;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  // background-color: lightskyblue;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+
+  #logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 70px;
+      height: 70px;
+    }
+
+    span {
+      font-size: xxx-large;
+    }
+  }
+
+  #navBar {
+    .navLink {
+      padding: 0;
+      padding-left: 20px;
+
+      &:last-child {
+        border-left: 1px solid black;
+        margin-left: 20px;
+      }
+    }
+  }
+}

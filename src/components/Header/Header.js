@@ -1,7 +1,8 @@
+import './Header.scss';
 import { NavLink } from 'react-router-dom';
-import logo from '../logo.png';
+import logo from '../../logo.png';
 
-const Navbar = () => {
+const Header = () => {
   const lists = [
     {
       id: 1,
@@ -10,16 +11,16 @@ const Navbar = () => {
     },
     {
       id: 2,
-      path: '/missions',
-      text: 'Missions',
-    },
-    {
-      id: 3,
       path: '/dragons',
       text: 'Dragons',
     },
     {
-      id: 1,
+      id: 3,
+      path: '/missions',
+      text: 'Missions',
+    },
+    {
+      id: 4,
       path: '/profile',
       text: 'My Profile',
     },
@@ -27,16 +28,25 @@ const Navbar = () => {
   return (
     <header>
       <div id="logo">
-        <img alt="logo" src={logo} />
+        <img
+          alt="logo"
+          src={logo}
+          width="30"
+          height="30"
+        />
+        <span>
+          Space Traveller&apos;s Hub
+        </span>
       </div>
+
       <nav id="navBar">
         {lists.map((list) => (
           <NavLink
+            className="navLink"
             key={list.id}
             to={list.path}
             style={({ isActive }) => ({
-              color: isActive ? 'red' : 'blue',
-              borderBottom: isActive ? 'solid 2px red' : 'solid 2px blue',
+              color: isActive ? 'blue' : 'black',
             })}
           >
             {list.text}
@@ -44,7 +54,8 @@ const Navbar = () => {
         ))}
       </nav>
     </header>
+
   );
 };
 
-export default Navbar;
+export default Header;
