@@ -1,4 +1,4 @@
-li {
+li.rocket_list {
   list-style: none;
   display: flex;
   padding: 0 70px;
@@ -29,6 +29,13 @@ li {
         border-radius: 3px;
         font-size: 12px;
         margin-right: 10px;
+      }
+
+      a {
+        margin-left: 8px;
+        font-size: 14px;
+        // text-decoration: none;
+        color: blue;
       }
     }
 
