@@ -8,6 +8,7 @@ li.rocket_list {
     img {
       width: 280px;
       height: 200px;
+
       @media (max-width: 650px) {
         width: 100%;
       }
@@ -62,6 +63,7 @@ li.rocket_list {
       }
     }
   }
+
   @media (max-width: 650px) {
     padding: 0 20px;
     flex-direction: column;
