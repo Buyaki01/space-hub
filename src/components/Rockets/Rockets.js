@@ -14,7 +14,20 @@ const Rockets = () => {
 
   return (
     <div>
-      {rockets.map((rocket) => <h2 key={rocket.id}>{rocket.description}</h2>)}
+      {rockets.map((rocket) => (
+        <li key={rocket.id}>
+          <div><img src={rocket.flickr_images[0]} alt="rocket" /></div>
+          <div>
+            <h2>{rocket.rocket_name}</h2>
+            <p>
+              {!rocket.reserved && <span>Reserved</span>}
+              {rocket.description}
+            </p>
+            <button type="button">Reserve Rocket</button>
+            {!rocket.reserved && <button type="button" className="cancel">Cancel Reservation</button>}
+          </div>
+        </li>
+      ))}
     </div>
   );
 };
