@@ -38,6 +38,15 @@
           }
         }
       }
+      @media (max-width: 992px) {
+        width: 50%;
+      }
+      @media (max-width: 600px) {
+        width: 100%;
+      }
     }
+  }
+  @media (max-width: 600px) {
+    padding: 20px;
   }
 }
