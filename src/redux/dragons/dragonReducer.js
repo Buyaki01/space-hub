@@ -1,7 +1,15 @@
-const initialState = null; // get from API
+export const initDragons = (payload) => ({
+  type: 'INIT_DRAGONS',
+  payload,
+});
 
-const reducer = (state = initialState, action) => {
+const reducer = (state = {}, action) => {
   switch (action.type) {
+    case 'INIT_DRAGONS':
+      return {
+        ...state,
+        dragons: action.payload,
+      };
     default:
       return state;
   }
