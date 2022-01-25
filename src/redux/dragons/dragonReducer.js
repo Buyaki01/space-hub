@@ -7,8 +7,7 @@ const reducer = (state = {}, action) => {
   switch (action.type) {
     case 'INIT_DRAGONS':
       return {
-        ...state,
-        dragons: action.payload,
+        ...action.payload,
       };
     default:
       return state;
