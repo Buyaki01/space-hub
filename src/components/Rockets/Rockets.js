@@ -29,7 +29,7 @@ const Rockets = () => {
               {rocket.description}
             </p>
             {!rocket.reserved && <button type="button" onClick={() => handleClick(rocket.id)}>Reserve Rocket</button>}
-            {rocket.reserved && <button type="button" className="cancel">Cancel Reservation</button>}
+            {rocket.reserved && <button type="button" className="cancel" onClick={() => handleClick(rocket.id)}>Cancel Reservation</button>}
           </div>
         </li>
       ))}
