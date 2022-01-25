@@ -24,8 +24,7 @@ const Rockets = () => {
           <div><img src={rocket.flickr_images[0]} alt="rocket" /></div>
           <div>
             <h2>{rocket.rocket_name}</h2>
-            <p>
-              {rocket.reserved && <span>Reserved</span>}
+            <p>     {rocket.reserved && <span>Reserved</span>}
               {rocket.description}
             </p>
             {!rocket.reserved && <button type="button" onClick={() => handleClick(rocket.id)}>Reserve Rocket</button>}
