@@ -22,7 +22,7 @@ li.rocket_list {
     > p {
       line-height: 1.5em;
 
-      span{
+      span {
         padding: 2px 5px;
         background: green;
         color: #fff;
@@ -34,7 +34,6 @@ li.rocket_list {
       a {
         margin-left: 8px;
         font-size: 14px;
-        // text-decoration: none;
         color: blue;
       }
     }
@@ -46,7 +45,7 @@ li.rocket_list {
       border-radius: 3px;
       color: #fff;
       cursor: pointer;
-      font-family: 'Ubuntu';
+      font-family: 'Ubuntu', sans-serif;
 
       &.cancel {
         background: #fff;
