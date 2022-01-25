@@ -1,7 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './Header/Header';
-import Profile from './pages/Profile';
+import ProfilePage from './pages/ProfilePage';
+import DragonsPage from './pages/DragonsPage';
 
 function App() {
   return (
@@ -10,8 +11,8 @@ function App() {
       <Routes>
         <Route path="/" />
         <Route path="/missions" />
-        <Route path="/dragons" />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/dragons" element={<DragonsPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
       </Routes>
     </div>
   );
