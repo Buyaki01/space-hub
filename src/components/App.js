@@ -3,13 +3,14 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './Header/Header';
 import ProfilePage from './Pages/ProfilePage';
 import DragonsPage from './Pages/DragonsPage';
+import Rockets from './Rockets/Rockets';
 
 function App() {
   return (
     <div>
       <Header />
       <Routes>
-        <Route path="/" />
+        <Route path="/" element={<Rockets />} />
         <Route path="/missions" />
         <Route path="/dragons" element={<DragonsPage />} />
         <Route path="/profile" element={<ProfilePage />} />
