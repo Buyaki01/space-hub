@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { reserveRockets } from '../../redux/rockets/rocketsAction';
-import '../Profile.scss';
+import './Profile.scss';
 
 const Profile = () => {
   const dispatch = useDispatch();
