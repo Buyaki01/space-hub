@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
+import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 import store from './redux/store';
 import App from './components/App';
@@ -12,11 +13,11 @@ getDragons().then((data) => store.dispatch(initDragons(data)));
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Provider store={store}>
+    <Provider store={store}>
+      <BrowserRouter>
         <App />
-      </Provider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root'),
 );
