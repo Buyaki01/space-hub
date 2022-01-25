@@ -4,10 +4,17 @@ const initialState = {
   rockets: [],
 };
 
+const toggleReserved = (state, payload) => state.map((rocket) => (
+  rocket.id !== payload
+    ? rocket : { ...rocket, reserved: !rocket.reserved }
+));
+
 const rocketsReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case Actions.ROCKETS_LOADED:
       return { rockets: [...payload] };
+    case Actions.ROCKETS_RESERVED:
+      return { rockets: toggleReserved(state.rockets, payload) };
     default:
       return state;
   }
