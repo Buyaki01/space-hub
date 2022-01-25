@@ -25,3 +25,7 @@ code {
     'Courier New',
     monospace;
 }
+
+.missionItemContainer {
+  margin-left: 10px;
+}
