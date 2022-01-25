@@ -1,8 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './Header/Header';
-import ProfilePage from './pages/ProfilePage';
-import DragonsPage from './pages/DragonsPage';
+import ProfilePage from './Pages/ProfilePage';
+import DragonsPage from './Pages/DragonsPage';
 
 function App() {
   return (
