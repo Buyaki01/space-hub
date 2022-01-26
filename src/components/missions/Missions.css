@@ -1,0 +1,25 @@
+.missionItemContainer {
+  margin-left: 10px;
+}
+
+.activeMember {
+  background-color: #0290ff;
+  color: #fff;
+  border: 1px solid #0290ff;
+}
+
+.leaveMissionBtn {
+  border-color: red;
+  color: red;
+}
+
+.notMember {
+  background-color: gray;
+  color: #fff;
+  border: 1px solid gray;
+}
+
+.joinMissionBtn {
+  color: gray;
+  border: 1px solid gray;
+}

@@ -23,15 +23,15 @@ const MissionItem = (props) => {
         </td>
         <td>
           {membership ? (
-            <p> Active Member </p>
+            <p className="activeMember"> Active Member </p>
           ) : (
-            <p> Not A Member </p>
+            <p className="notMember"> Not A Member </p>
           )}
         </td>
         <td>
           {membership ? (
-            <button type="button" onClick={changeMembership}> Leave Mission </button>
-          ) : (<button type="button" onClick={changeMembership}> Join Mission </button>)}
+            <button type="button" onClick={changeMembership} className="leaveMissionBtn"> Leave Mission </button>
+          ) : (<button type="button" onClick={changeMembership} className="joinMissionBtn"> Join Mission </button>)}
 
         </td>
       </tr>

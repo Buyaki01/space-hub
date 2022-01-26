@@ -7,12 +7,24 @@ const Profile = () => {
   const rockets = useSelector(({ rocketsReducer }) => rocketsReducer.rockets);
   const reserved = rockets.filter((rocket) => rocket.reserved);
 
+  const missions = useSelector((state) => state.missionsReducer);
+  const reservedMissions = missions.filter((mission) => mission.membership);
+
   const handleClick = (id) => {
     dispatch(reserveRockets(id));
   };
 
   return (
     <div className="profile">
+      <div>
+        <h2> My Missions </h2>
+        <div className="profile-missions">
+          {reservedMissions.map((mission) => (
+            <h3 key={mission.id}>{mission.title}</h3>
+          ))}
+        </div>
+      </div>
+
       <div>
         <h2>My Rockets</h2>
         <ul className="rockets">
