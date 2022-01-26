@@ -9,7 +9,6 @@ const Profile = () => {
 
   const missions = useSelector((state) => state.missionsReducer);
   const reservedMissions = missions.filter((mission) => mission.membership);
-
   const handleClick = (id) => {
     dispatch(reserveRockets(id));
   };
@@ -20,7 +19,7 @@ const Profile = () => {
         <h2> My Missions </h2>
         <div className="profile-missions">
           {reservedMissions.map((mission) => (
-            <h3 key={mission.id}>{mission.title}</h3>
+            <p key={mission.id}>{mission.title}</p>
           ))}
         </div>
       </div>

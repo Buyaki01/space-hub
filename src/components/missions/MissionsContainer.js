@@ -1,5 +1,5 @@
 import MissionsList from './MissionsList';
-// import './missions.css';
+import './Missions.css';
 
 const MissionsContainer = () => (
   <div>

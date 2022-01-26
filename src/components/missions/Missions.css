@@ -1,25 +1,46 @@
 .missionItemContainer {
-  margin-left: 10px;
+  margin: 0 20px;
+  border: 2px solid gray;
+}
+
+.missionItemContainer tr:nth-child(even) { background-color: #f2f2f2; }
+
+.missionItemContainer tr:hover { background-color: #ddd; }
+
+.border {
+  border: 2px solid gray;
+}
+
+.description {
+  padding: 10px;
+  margin-right: 60px;
+}
+
+.status {
+  padding: 0 20px;
 }
 
 .activeMember {
   background-color: #0290ff;
   color: #fff;
   border: 1px solid #0290ff;
+  width: 130px;
 }
 
 .leaveMissionBtn {
   border-color: red;
   color: red;
+  width: 150px;
 }
 
 .notMember {
   background-color: gray;
   color: #fff;
-  border: 1px solid gray;
+  padding: 0 10px;
+  width: 130px;
 }
 
 .joinMissionBtn {
   color: gray;
-  border: 1px solid gray;
+  width: 150px;
 }

@@ -14,21 +14,21 @@ const MissionItem = (props) => {
   };
   return (
     <tbody>
-      <tr>
-        <td>
+      <tr className="border">
+        <td className="border">
           {title}
         </td>
-        <td>
+        <td className="border description">
           {description}
         </td>
-        <td>
+        <td className="border status">
           {membership ? (
             <p className="activeMember"> Active Member </p>
           ) : (
             <p className="notMember"> Not A Member </p>
           )}
         </td>
-        <td>
+        <td className="border status">
           {membership ? (
             <button type="button" onClick={changeMembership} className="leaveMissionBtn"> Leave Mission </button>
           ) : (<button type="button" onClick={changeMembership} className="joinMissionBtn"> Join Mission </button>)}
