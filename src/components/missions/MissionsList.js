@@ -13,9 +13,19 @@ const MissionsList = () => {
   ];
   return (
     <section>
-      {missionsArray.map((mission) => (
-        <MissionItem key={mission.id} mission={mission} />
-      ))}
+      <table className="missionItemContainer">
+        <thead>
+          <tr>
+            <th>Mission</th>
+            <th>Description</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        {missionsArray.map((mission) => (
+          <MissionItem key={mission.id} mission={mission} />
+        ))}
+      </table>
     </section>
   );
 };
