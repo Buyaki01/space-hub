@@ -1,16 +1,14 @@
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import MissionItem from './MissionItem';
+import { getMissionsFromApi } from '../../redux/missions/missionsReducer';
 
 const MissionsList = () => {
-  const missionsArray = [
-    {
-      title: 'Thaicom',
-      description: 'The quick old dog jumped over the lazy dog. The quick old dog jumped over the lazy dog',
-    },
-    {
-      title: 'Telstar',
-      description: 'The quick old dog jumped over the lazy dog. The quick old dog jumped over the lazy dog',
-    },
-  ];
+  const missionsArray = useSelector((state) => state.missionsReducer);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getMissionsFromApi());
+  }, [dispatch]);
   return (
     <section>
       <table className="missionItemContainer">
