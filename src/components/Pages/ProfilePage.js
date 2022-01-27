@@ -20,11 +20,15 @@ const Profile = () => {
     <div className="profile">
       <div>
         <h2> My Missions </h2>
-        <div className="profile-missions">
-          {reservedMissions.map((mission) => (
-            <p key={mission.id}>{mission.title}</p>
-          ))}
-        </div>
+        <ul className="rockets">
+          {reservedMissions.length
+            ? reservedMissions.map((mission) => (
+              <li key={mission.id}>
+                <p>{mission.title}</p>
+              </li>
+            ))
+            : <p>No missions reserved yet</p>}
+        </ul>
       </div>
 
       <div>

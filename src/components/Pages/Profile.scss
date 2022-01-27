@@ -1,10 +1,12 @@
 .profile {
   padding: 20px 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 20px;
 
-  > div:nth-of-type(2) {
+  > div {
     ul.rockets {
       border: solid 1px rgb(190, 188, 188);
-      width: 30%;
       list-style: none;
       margin: 0;
       padding: 0;
