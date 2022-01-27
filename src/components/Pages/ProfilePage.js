@@ -12,7 +12,7 @@ const Profile = () => {
 
   const missions = useSelector((state) => state.missionsReducer);
   const reservedMissions = missions.filter((mission) => mission.membership);
-  
+
   const handleClick = (id) => {
     dispatch(reserveRockets(id));
   };
