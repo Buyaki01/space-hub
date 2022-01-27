@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render component 1`] = `
+<DocumentFragment>
+  <header>
+    <div
+      id="logo"
+    >
+      <img
+        alt="logo"
+        height="30"
+        src="logo.png"
+        width="30"
+      />
+      <span>
+        Space Traveller's Hub
+      </span>
+    </div>
+    <nav
+      id="navBar"
+    >
+      <a
+        aria-current="page"
+        class="navLink active"
+        href="/"
+        style="color: blue;"
+      >
+        Rockets
+      </a>
+      <a
+        class="navLink"
+        href="/dragons"
+        style="color: black;"
+      >
+        Dragons
+      </a>
+      <a
+        class="navLink"
+        href="/missions"
+        style="color: black;"
+      >
+        Missions
+      </a>
+      <a
+        class="navLink"
+        href="/profile"
+        style="color: black;"
+      >
+        My Profile
+      </a>
+    </nav>
+  </header>
+</DocumentFragment>
+`;
+
+exports[`Rockets should conditionally render elements when buttons are clicked 1`] = `
+<DocumentFragment>
+  <div>
+    <img
+      alt="rocket"
+      src=""
+    />
+  </div>
+  <div>
+    <h2 />
+    <p>
+      <a
+        href=""
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        Read More...
+      </a>
+    </p>
+    <button
+      type="button"
+    >
+      Reserve Rocket
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Rockets should render component correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="rockets-container"
+  />
+</DocumentFragment>
+`;
