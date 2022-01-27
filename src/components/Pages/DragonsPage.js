@@ -1,12 +1,3 @@
-import {
-  Card,
-  Col,
-  Row,
-  Button,
-} from 'react-bootstrap';
-
-import './DragonsPage.scss';
-
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleDragonReservation } from '../../redux/dragons/dragonReducer';
 
@@ -18,33 +9,24 @@ const DragonsPage = () => {
     dispatch(toggleDragonReservation(id));
   };
 
-  const dragonsList = dragons.map((dragon) => {
-    const readMoreLink = <a href={dragon.wikipedia} target="_blank" rel="noreferrer noopener">Read More</a>;
-    return (
-      <Col key={dragon.id}>
-        <Card style={{ height: '550px' }}>
-          <Card.Img variant="top" src={dragon.flickr_images[0]} className="cardImg" />
-          <Card.Body style={{ height: '450px' }} className="d-flex flex-column justify-content-between">
-            <div>
-              <Card.Title>{dragon.name}</Card.Title>
-              <Card.Text>
-                {`${dragon.description.split('').slice(0, 100).join('')}... `}
-                <br />
-                {readMoreLink}
-              </Card.Text>
-            </div>
-            {!dragon.reserved && (<Button variant="primary" onClick={() => handleClick(dragon.id)}>Reserve</Button>)}
-            {dragon.reserved && (<Button variant="outline-danger" onClick={() => handleClick(dragon.id)}>Cancel</Button>)}
-          </Card.Body>
-        </Card>
-      </Col>
-    );
-  });
-
   return (
-    <Row xs={1} md={3} className="g-4 m-0">
-      {dragonsList}
-    </Row>
+    <div>
+      {dragons.map((dragon) => (
+        <li key={dragon.id} className="rocket_list">
+          <div><img src={dragon.flickr_images[0]} alt="dragon" /></div>
+          <div>
+            <h2>{dragon.name}</h2>
+            <p>
+              {dragon.reserved && <span>Reserved</span>}
+              {dragon.description}
+              <a href={dragon.wikipedia} target="_blank" rel="noreferrer noopener">Read More...</a>
+            </p>
+            {!dragon.reserved && <button type="button" onClick={() => handleClick(dragon.id)}>Reserve Rocket</button>}
+            {dragon.reserved && <button type="button" className="cancel" onClick={() => handleClick(dragon.id)}>Cancel Reservation</button>}
+          </div>
+        </li>
+      ))}
+    </div>
   );
 };
 
