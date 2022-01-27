@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rockets should conditionally render elements when buttons are clicked 1`] = `
+<DocumentFragment>
+  <div>
+    <img
+      alt="rocket"
+      src=""
+    />
+  </div>
+  <div>
+    <h2 />
+    <p>
+      <a
+        href=""
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        Read More...
+      </a>
+    </p>
+    <button
+      type="button"
+    >
+      Reserve Rocket
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Rockets should render component correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="rockets-container"
+  />
+</DocumentFragment>
+`;

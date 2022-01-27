@@ -18,14 +18,24 @@ const RocketsItem = ({
   </>
 );
 
+RocketsItem.defaultProps = {
+  handleClick() {},
+  wiki: '',
+  desc: '',
+  name: '',
+  image: '',
+  reserved: '',
+  id: 0,
+};
+
 RocketsItem.propTypes = {
-  id: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  reserved: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired,
-  wiki: PropTypes.string.isRequired,
-  handleClick: PropTypes.func.isRequired,
+  id: PropTypes.number,
+  name: PropTypes.string,
+  image: PropTypes.string,
+  reserved: PropTypes.string,
+  desc: PropTypes.string,
+  wiki: PropTypes.string,
+  handleClick: PropTypes.func,
 };
 
 export default RocketsItem;
