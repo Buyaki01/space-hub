@@ -18,7 +18,7 @@ const Rockets = () => {
   };
 
   return (
-    <div>
+    <div className="rockets-container">
       {rockets.map((rocket) => (
         <li key={rocket.id} className="rocket_list">
           <div><img src={rocket.flickr_images[0]} alt="rocket" /></div>
