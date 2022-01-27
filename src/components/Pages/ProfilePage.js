@@ -10,12 +10,24 @@ const Profile = () => {
   const dragons = useSelector(({ dragonsReducer }) => dragonsReducer.dragons);
   const reservedDragons = dragons.filter((dragon) => dragon.reserved);
 
+  const missions = useSelector((state) => state.missionsReducer);
+  const reservedMissions = missions.filter((mission) => mission.membership);
+  
   const handleClick = (id) => {
     dispatch(reserveRockets(id));
   };
 
   return (
     <div className="profile">
+      <div>
+        <h2> My Missions </h2>
+        <div className="profile-missions">
+          {reservedMissions.map((mission) => (
+            <p key={mission.id}>{mission.title}</p>
+          ))}
+        </div>
+      </div>
+
       <div>
         <h2>My Rockets</h2>
         <ul className="rockets">

@@ -13,10 +13,10 @@ const MissionsList = () => {
     <section>
       <table className="missionItemContainer">
         <thead>
-          <tr>
-            <th>Mission</th>
-            <th>Description</th>
-            <th>Status</th>
+          <tr className="border">
+            <th className="border">Mission</th>
+            <th className="border">Description</th>
+            <th className="border">Status</th>
           </tr>
         </thead>
 

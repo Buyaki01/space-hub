@@ -1,9 +1,7 @@
 .profile {
   padding: 20px 50px;
 
-  > div {
-    display: inline-block;
-    wid
+  > div:first-of-type {
     ul.rockets {
       border: solid 1px rgb(190, 188, 188);
       width: 30%;
