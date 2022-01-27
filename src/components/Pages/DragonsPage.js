@@ -15,7 +15,6 @@ const DragonsPage = () => {
   const dragons = useSelector(({ dragonsReducer }) => dragonsReducer.dragons);
 
   const handleClick = (id) => {
-    console.log(id);
     dispatch(toggleDragonReservation(id));
   };
 
