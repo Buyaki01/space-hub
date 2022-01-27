@@ -7,7 +7,9 @@ const MissionsList = () => {
   const missionsArray = useSelector((state) => state.missionsReducer);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getMissionsFromApi());
+    if (missionsArray.length === 0) {
+      dispatch(getMissionsFromApi());
+    }
   }, [dispatch]);
   return (
     <section>
