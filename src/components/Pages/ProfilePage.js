@@ -6,12 +6,12 @@ const Profile = () => {
   const dispatch = useDispatch();
   const rockets = useSelector(({ rocketsReducer }) => rocketsReducer.rockets);
   const reserved = rockets.filter((rocket) => rocket.reserved);
-
-  const missions = useSelector((state) => state.missionsReducer);
-  const reservedMissions = missions.filter((mission) => mission.membership);
   const handleClick = (id) => {
     dispatch(reserveRockets(id));
   };
+
+  const missions = useSelector((state) => state.missionsReducer);
+  const reservedMissions = missions.filter((mission) => mission.membership);
 
   return (
     <div className="profile">
