@@ -11,7 +11,7 @@ const DragonsPage = () => {
 
   return (
     <div>
-      {dragons.map((dragon) => (
+      {dragons.length ? dragons.map((dragon) => (
         <li key={dragon.id} className="rocket_list">
           <div><img src={dragon.flickr_images[0]} alt="dragon" /></div>
           <div>
@@ -25,7 +25,7 @@ const DragonsPage = () => {
             {dragon.reserved && <button type="button" className="cancel" onClick={() => handleClick(dragon.id)}>Cancel Reservation</button>}
           </div>
         </li>
-      ))}
+      )) : 'No Data Available'}
     </div>
   );
 };
