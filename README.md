@@ -10,6 +10,9 @@
 - SCSS
 - React Testing Library
 
+## Live Demo
+[Live Demo](https://wizardly-bardeen-0ea151.netlify.app/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps
