@@ -5,7 +5,7 @@ import Header from './Header/Header';
 import MissionsContainer from './missions/MissionsContainer';
 import ProfilePage from './Pages/ProfilePage';
 import DragonsPage from './Pages/DragonsPage';
-import Rockets from './Rockets/Rockets';
+import Rockets from './Rockets/RocketsList';
 import getDragons from '../modules/dragonsAPI';
 
 function App() {
