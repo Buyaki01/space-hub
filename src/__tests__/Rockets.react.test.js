@@ -39,7 +39,12 @@ describe('Rockets', () => {
   });
 
   test('should conditionally render elements when buttons are clicked', () => {
-    const { asFragment } = render(<Provider store={store}><RocketsItem /></Provider>);
+    const { asFragment, container } = render(<Provider store={store}><RocketsItem /></Provider>);
+    const divs = container.querySelectorAll('div');
+
     expect(asFragment()).toMatchSnapshot();
+    expect(container.querySelector('p').children.length).toBe(1);
+    expect(divs[0].children.length).toBe(1);
+    expect(divs[1].children.length).toBe(3);
   });
 });
