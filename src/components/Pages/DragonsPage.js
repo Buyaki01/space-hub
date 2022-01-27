@@ -5,6 +5,8 @@ import {
   Button,
 } from 'react-bootstrap';
 
+import './DragonsPage.scss';
+
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleDragonReservation } from '../../redux/dragons/dragonReducer';
 
@@ -22,12 +24,13 @@ const DragonsPage = () => {
     return (
       <Col key={dragon.id}>
         <Card style={{ height: '550px' }}>
-          <Card.Img variant="top" src={dragon.flickr_images[0]} style={{ height: '300px' }} />
-          <Card.Body className="d-flex flex-column justify-content-between">
+          <Card.Img variant="top" src={dragon.flickr_images[0]} className="cardImg" />
+          <Card.Body style={{ height: '450px' }} className="d-flex flex-column justify-content-between">
             <div>
               <Card.Title>{dragon.name}</Card.Title>
               <Card.Text>
                 {`${dragon.description.split('').slice(0, 100).join('')}... `}
+                <br />
                 {readMoreLink}
               </Card.Text>
             </div>

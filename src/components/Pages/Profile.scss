@@ -1,7 +1,9 @@
 .profile {
   padding: 20px 50px;
 
-  > div:first-of-type {
+  > div {
+    display: inline-block;
+    wid
     ul.rockets {
       border: solid 1px rgb(190, 188, 188);
       width: 30%;
@@ -30,7 +32,7 @@
           padding: 10px;
           border-radius: 3px;
           cursor: pointer;
-          font-family: 'Ubuntu', sans-serif;
+          font-family: "Ubuntu", sans-serif;
 
           &:hover {
             background: red;
@@ -47,6 +49,11 @@
         width: 100%;
       }
     }
+  }
+
+  > div#myDragons {
+    background-color: red;
+    display: inline-block;
   }
 
   @media (max-width: 600px) {
