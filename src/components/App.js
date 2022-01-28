@@ -8,6 +8,7 @@ import DragonsPage from './Pages/DragonsPage';
 import Rockets from './Rockets/RocketsList';
 import getDragons from '../modules/dragonsAPI';
 import { getMissionsFromApi } from '../redux/missions/missionsReducer';
+import { fetchRockets } from '../redux/rockets/rocketReducer';
 
 function App() {
   const dispatch = useDispatch();
@@ -15,6 +16,7 @@ function App() {
   useEffect(() => {
     dispatch(getDragons());
     dispatch(getMissionsFromApi());
+    dispatch(fetchRockets());
   }, []);
 
   return (
