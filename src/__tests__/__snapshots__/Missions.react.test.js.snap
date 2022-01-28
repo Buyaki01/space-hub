@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Missions should render component correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <section>
+      <table
+        class="missionItemContainer"
+      >
+        <thead>
+          <tr
+            class="border"
+          >
+            <th
+              class="border"
+            >
+              Mission
+            </th>
+            <th
+              class="border"
+            >
+              Description
+            </th>
+            <th
+              class="border"
+            >
+              Status
+            </th>
+          </tr>
+        </thead>
+      </table>
+    </section>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Missions should render component correctly 2`] = `
+<DocumentFragment>
+  <section>
+    <table
+      class="missionItemContainer"
+    >
+      <thead>
+        <tr
+          class="border"
+        >
+          <th
+            class="border"
+          >
+            Mission
+          </th>
+          <th
+            class="border"
+          >
+            Description
+          </th>
+          <th
+            class="border"
+          >
+            Status
+          </th>
+        </tr>
+      </thead>
+    </table>
+  </section>
+</DocumentFragment>
+`;
