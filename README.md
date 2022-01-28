@@ -10,6 +10,23 @@
 - SCSS
 - React Testing Library
 
+## Live Demo
+[Live Demo](https://wizardly-bardeen-0ea151.netlify.app/)
+
+## Screenshots
+
+### Rockets page
+![rockets](https://user-images.githubusercontent.com/43995830/151383346-102b9d0c-bc62-41a9-a3d9-f8ceb742d4a1.png)
+
+### Missions page
+![missions](https://user-images.githubusercontent.com/43995830/151383418-129cbd85-86b9-40b8-86ce-1d650837a5f5.png)
+
+### Dragons page
+![dragons](https://user-images.githubusercontent.com/43995830/151383456-0018ab42-e92d-421e-937a-7519c63a9cd4.png)
+
+### My Profile page
+![myprofile](https://user-images.githubusercontent.com/43995830/151383473-9dfb5bea-2547-44e0-b56c-e94a25f37bc8.png)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps
