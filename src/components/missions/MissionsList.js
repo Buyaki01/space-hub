@@ -1,16 +1,10 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import MissionItem from './MissionItem';
-import { getMissionsFromApi } from '../../redux/missions/missionsReducer';
 
 const MissionsList = () => {
   const missionsArray = useSelector((state) => state.missionsReducer);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    if (missionsArray.length === 0) {
-      dispatch(getMissionsFromApi());
-    }
-  }, [dispatch]);
+
   return (
     <section>
       <table className="missionItemContainer">

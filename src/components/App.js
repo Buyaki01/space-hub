@@ -7,12 +7,14 @@ import ProfilePage from './Pages/ProfilePage';
 import DragonsPage from './Pages/DragonsPage';
 import Rockets from './Rockets/RocketsList';
 import getDragons from '../modules/dragonsAPI';
+import { getMissionsFromApi } from '../redux/missions/missionsReducer';
 
 function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getDragons());
+    dispatch(getMissionsFromApi());
   }, []);
 
   return (
