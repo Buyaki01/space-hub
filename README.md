@@ -70,7 +70,7 @@ Your app is ready to be deployed!
 
 - Github: [@Buyaki01](https://github.com/Buyaki01)
 - Twitter: [@BuyakiRitta](https://twitter.com/BuyakiRitta)
-- Linkedin: [Ritta Buyaki](https://www.linkedin.com/in/ritta-sweta/)
+- Linkedin: [Ritta Sweta](https://www.linkedin.com/in/ritta-sweta/)
 
 👤 **Anselem Odimegwu**
 
