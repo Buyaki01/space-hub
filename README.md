@@ -11,7 +11,7 @@
 - React Testing Library
 
 ## Live Demo
-[Live Demo](https://wizardly-bardeen-0ea151.netlify.app/)
+[Live Demo](https://cranky-wright-0700ce.netlify.app/)
 
 ## Screenshots
 
